@@ -747,10 +747,10 @@ import Layout from '../layouts/Layout.astro';
   window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
-    if (currentScroll > 100) {
-      navbar?.classList.add('shadow-elegant');
+    if (currentScroll > 50) {
+      navbar?.classList.add('scrolled', 'shadow-elegant');
     } else {
-      navbar?.classList.remove('shadow-elegant');
+      navbar?.classList.remove('scrolled', 'shadow-elegant');
     }
 
     lastScroll = currentScroll;
