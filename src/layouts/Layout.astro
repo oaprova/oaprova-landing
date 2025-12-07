@@ -1,0 +1,174 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Estude para a OAB com mais de 15 mil questões FGV, simulados completos, trilhas de estudo e ferramentas inteligentes para acelerar sua aprovação."
+} = Astro.props;
+
+const siteUrl = "https://oaprova.com.br";
+const canonicalURL = new URL(Astro.url.pathname, siteUrl);
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Fonts with display swap for better performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <meta name="keywords" content="questões OAB, simulados OAB, exame da ordem, FGV OAB, CESPE OAB, prova OAB comentada, curso OAB online, estudo OAB, trilhas OAB, banco de questões OAB, preparatório OAB, aprovação OAB" />
+    <meta name="author" content="OAprova" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Geo Tags (Brazil) -->
+    <meta name="geo.region" content="BR" />
+    <meta name="geo.placename" content="Brasil" />
+    <meta name="language" content="Portuguese" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="OAprova - Plataforma de Estudos para OAB" />
+    <meta property="og:site_name" content="OAprova" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalURL} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <meta name="twitter:image:alt" content="OAprova - Plataforma de Estudos para OAB" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#6F4F3A" />
+    <meta name="msapplication-TileColor" content="#6F4F3A" />
+
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "OAprova",
+      "alternateName": "OA Prova",
+      "description": "Plataforma inteligente de estudos para aprovação no Exame da Ordem dos Advogados do Brasil (OAB).",
+      "url": "https://oaprova.com.br",
+      "logo": "https://oaprova.com.br/logo.png",
+      "sameAs": [],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "availableLanguage": "Portuguese"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brazil"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - Course -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Course",
+      "name": "Preparatório OAB - Exame da Ordem",
+      "description": "Curso preparatório completo para o Exame da Ordem dos Advogados do Brasil (OAB) com mais de 15 mil questões comentadas, simulados e trilhas de estudo.",
+      "provider": {
+        "@type": "Organization",
+        "name": "OAprova",
+        "url": "https://oaprova.com.br"
+      },
+      "educationalLevel": "Professional",
+      "inLanguage": "pt-BR",
+      "teaches": ["Direito Constitucional", "Direito Civil", "Direito Penal", "Direito Processual", "Direito Administrativo", "Direito do Trabalho", "Direito Empresarial", "Direito Tributário", "Ética Profissional"],
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - WebSite (for Sitelinks Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "OAprova",
+      "url": "https://oaprova.com.br",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://app.oaprova.com.br/questoes?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data - FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quantas questões tem o OAprova?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O OAprova possui mais de 15.000 questões de provas anteriores da OAB, todas comentadas e organizadas por disciplina e banca."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O OAprova tem questões da FGV?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim! O OAprova possui todas as questões das provas da OAB aplicadas pela FGV, além de questões de outras bancas como CESPE e Vunesp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como funcionam as trilhas de estudo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As trilhas de estudo são roteiros personalizados que guiam seu estudo de forma organizada, garantindo que você cubra todo o conteúdo necessário para a prova da OAB."
+          }
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="min-h-screen bg-gradient-hero noise">
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/global.css';
+</style>

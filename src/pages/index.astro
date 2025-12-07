@@ -1,0 +1,791 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="OAprova – Sua aprovação na OAB começa aqui">
+  <!-- Animated Mesh Background -->
+  <div class="mesh-gradient"></div>
+
+  <!-- Floating Particles -->
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <!-- Navbar with Glass Effect -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glass" id="navbar">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex items-center justify-between">
+        <a href="/" class="text-2xl font-bold text-gradient text-glow">OAprova</a>
+        <div class="hidden md:flex items-center gap-8">
+          <a href="#features" class="text-mocha-700 hover:text-mocha-900 transition-colors underline-animate">Recursos</a>
+          <a href="#how-it-works" class="text-mocha-700 hover:text-mocha-900 transition-colors underline-animate">Como Funciona</a>
+          <a href="#pricing" class="text-mocha-700 hover:text-mocha-900 transition-colors underline-animate">Preços</a>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="https://app.oaprova.com.br" class="text-mocha-700 hover:text-mocha-900 font-medium transition-colors underline-animate">Entrar</a>
+          <a href="https://app.oaprova.com.br/cadastro" class="btn-primary btn-magnetic btn-ripple text-sm py-3 px-6">
+            <span>Começar Grátis</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION - Ultra Disruptive -->
+  <section class="min-h-screen pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden relative">
+    <!-- Background Blobs -->
+    <div class="absolute top-20 -right-40 w-[600px] h-[600px] bg-gold/20 blob-pulse blur-3xl"></div>
+    <div class="absolute -bottom-40 -left-40 w-[500px] h-[500px] bg-mocha-400/20 blob blur-3xl" style="animation-delay: -4s;"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-mocha-300/10 blob blur-3xl" style="animation-delay: -2s;"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
+        <!-- Left Content -->
+        <div class="space-y-8">
+          <!-- Animated Badge -->
+          <div class="hero-badge inline-flex items-center gap-3 glass-card px-5 py-3 rounded-full">
+            <span class="relative flex h-3 w-3">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+            </span>
+            <span class="text-mocha-700 font-medium">+2.500 alunos estudando agora</span>
+            <span class="text-mocha-400">•</span>
+            <span class="text-gold font-semibold">AO VIVO</span>
+          </div>
+
+          <!-- Main Headline with Text Animation -->
+          <div class="space-y-2">
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1]">
+              <span class="hero-word inline-block" style="animation-delay: 0.3s">Conquiste</span>
+              <span class="hero-word inline-block" style="animation-delay: 0.45s">sua</span>
+            </h1>
+            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1]">
+              <span class="hero-word inline-block text-gradient" style="animation-delay: 0.6s">aprovação</span>
+              <span class="hero-word inline-block text-gradient" style="animation-delay: 0.75s">na</span>
+              <span class="hero-word inline-block text-gradient" style="animation-delay: 0.9s">OAB</span>
+            </h1>
+          </div>
+
+          <!-- Subheadline -->
+          <p class="text-xl md:text-2xl text-mocha-600 leading-relaxed max-w-xl scroll-reveal visible delay-200">
+            A plataforma mais <span class="text-mocha-800 font-semibold">inteligente</span> do Brasil para quem quer passar no Exame da Ordem.
+            <span class="text-gradient font-bold">15.000+ questões FGV</span> com comentários de especialistas.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 scroll-reveal visible delay-300">
+            <a href="https://app.oaprova.com.br/cadastro" class="btn-primary btn-magnetic btn-ripple text-lg py-5 px-10 shadow-glow-intense">
+              <span class="flex items-center gap-2">
+                Começar Gratuitamente
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </a>
+            <a href="#demo" class="btn-secondary btn-magnetic text-lg py-5 px-10">
+              <span class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                Ver Demonstração
+              </span>
+            </a>
+          </div>
+
+          <!-- Social Proof with Animation -->
+          <div class="flex flex-wrap items-center gap-8 pt-6 scroll-reveal visible delay-400">
+            <div class="flex -space-x-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-mocha-200 to-mocha-300 border-3 border-white flex items-center justify-center text-sm font-bold text-mocha-700 hover-lift cursor-pointer">JM</div>
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-mocha-300 to-mocha-400 border-3 border-white flex items-center justify-center text-sm font-bold text-mocha-700 hover-lift cursor-pointer" style="animation-delay: 0.1s">AS</div>
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-mocha-400 to-mocha-500 border-3 border-white flex items-center justify-center text-sm font-bold text-white hover-lift cursor-pointer" style="animation-delay: 0.2s">LP</div>
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-gold to-mocha-500 border-3 border-white flex items-center justify-center text-sm font-bold text-white hover-lift cursor-pointer shadow-glow" style="animation-delay: 0.3s">+</div>
+            </div>
+            <div>
+              <div class="flex items-center gap-1">
+                {[...Array(5)].map((_, i) => (
+                  <svg class="w-5 h-5 text-gold fill-current" style={`animation: pulse 1s ease-in-out infinite; animation-delay: ${i * 0.1}s`} viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                  </svg>
+                ))}
+              </div>
+              <p class="text-sm text-mocha-600 mt-1"><span class="font-bold text-mocha-800">4.9/5</span> de 3.200+ avaliações</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content - Clean Dashboard Preview -->
+        <div class="relative scroll-scale visible delay-200">
+          <!-- Subtle glow behind -->
+          <div class="absolute -inset-4 bg-gradient-to-r from-gold/20 via-mocha-400/20 to-gold/20 rounded-[2.5rem] blur-2xl opacity-60"></div>
+
+          <!-- Main Card -->
+          <div class="relative bg-white rounded-3xl shadow-elegant p-8 border border-mocha-100">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-8">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-mocha-500 to-gold rounded-xl flex items-center justify-center">
+                  <svg class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="font-semibold text-mocha-800">Maria Silva</div>
+                  <div class="text-sm text-mocha-500">Nível 7 • 2.450 XP</div>
+                </div>
+              </div>
+              <div class="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1.5 rounded-full text-sm font-medium">
+                <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                Online
+              </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-3 gap-4 mb-8">
+              <div class="text-center p-4 bg-mocha-50 rounded-2xl">
+                <div class="text-3xl font-bold text-mocha-800 counter" data-target="89">0</div>
+                <div class="text-xs text-mocha-500 mt-1">% Aprovação</div>
+              </div>
+              <div class="text-center p-4 bg-mocha-50 rounded-2xl">
+                <div class="text-3xl font-bold text-mocha-800 counter" data-target="847">0</div>
+                <div class="text-xs text-mocha-500 mt-1">Questões</div>
+              </div>
+              <div class="text-center p-4 bg-mocha-50 rounded-2xl">
+                <div class="text-3xl font-bold text-mocha-800 counter" data-target="12">0</div>
+                <div class="text-xs text-mocha-500 mt-1">Dias seguidos</div>
+              </div>
+            </div>
+
+            <!-- Progress Section -->
+            <div class="space-y-4 mb-6">
+              <div class="flex items-center justify-between text-sm">
+                <span class="text-mocha-700 font-medium">Progresso geral</span>
+                <span class="text-gold font-semibold">72%</span>
+              </div>
+              <div class="progress-bar h-3">
+                <div class="progress-bar-fill h-full w-[72%]"></div>
+              </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="space-y-3">
+              <div class="text-sm font-medium text-mocha-700 mb-3">Atividade recente</div>
+              <div class="flex items-center gap-3 p-3 bg-green-50 rounded-xl">
+                <div class="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium text-green-800">Simulado OAB XLII</div>
+                  <div class="text-xs text-green-600">68/80 acertos • há 2h</div>
+                </div>
+                <div class="text-green-700 font-bold">85%</div>
+              </div>
+              <div class="flex items-center gap-3 p-3 bg-mocha-50 rounded-xl">
+                <div class="w-8 h-8 bg-mocha-400 rounded-lg flex items-center justify-center">
+                  <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="text-sm font-medium text-mocha-800">Direito Civil</div>
+                  <div class="text-xs text-mocha-500">30 questões • há 5h</div>
+                </div>
+                <div class="text-mocha-700 font-bold">73%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badge - Simple -->
+          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-elegant p-4 border border-mocha-100 float">
+            <div class="flex items-center gap-3">
+              <div class="w-12 h-12 bg-gradient-to-br from-gold to-mocha-500 rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div>
+                <div class="font-bold text-mocha-800">+350 XP</div>
+                <div class="text-xs text-mocha-500">Ganhos hoje</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Notification - Simple -->
+          <div class="absolute -top-4 -right-4 bg-white rounded-xl shadow-elegant px-4 py-2 border border-green-200 float-slow" style="animation-delay: -3s;">
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <span class="text-sm font-medium text-green-700">Meta diária atingida!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+      <span class="text-sm text-mocha-400">Role para descobrir</span>
+      <svg class="w-6 h-6 text-mocha-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- Logos Carousel Section -->
+  <section class="py-16 border-y border-mocha-100 bg-white/50 overflow-hidden relative">
+    <p class="text-center text-mocha-500 text-sm mb-10 tracking-wide uppercase">Questões das principais bancas organizadoras</p>
+
+    <!-- Fade edges -->
+    <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 100px; background: linear-gradient(to right, white, transparent); z-index: 10; pointer-events: none;"></div>
+    <div style="position: absolute; right: 0; top: 0; bottom: 0; width: 100px; background: linear-gradient(to left, white, transparent); z-index: 10; pointer-events: none;"></div>
+
+    <div style="display: flex; width: fit-content; animation: slideLogos 25s linear infinite;">
+      <div style="display: flex; gap: 2rem; padding: 0 1rem;">
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">FGV</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fundação Getúlio Vargas</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">CESPE</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Centro de Seleção</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">FCC</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fundação Carlos Chagas</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">VUNESP</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fund. Vestibular UNESP</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">CEBRASPE</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Centro Brasileiro</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">IADES</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Inst. Americano</span>
+        </div>
+      </div>
+      <div style="display: flex; gap: 2rem; padding: 0 1rem;">
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">FGV</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fundação Getúlio Vargas</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">CESPE</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Centro de Seleção</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">FCC</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fundação Carlos Chagas</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">VUNESP</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Fund. Vestibular UNESP</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">CEBRASPE</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Centro Brasileiro</span>
+        </div>
+        <div style="display: flex; flex-direction: column; align-items: center; padding: 1.25rem 2rem; background: white; border-radius: 1rem; border: 1px solid #f3ebe5; min-width: 170px;">
+          <span style="font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: #6f4f3a;">IADES</span>
+          <span style="font-size: 0.65rem; color: #c19780; margin-top: 0.25rem; text-transform: uppercase; letter-spacing: 0.08em;">Inst. Americano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    @keyframes slideLogos {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
+
+  <!-- Features Section -->
+  <section id="features" class="py-32 relative overflow-hidden">
+    <!-- Background decoration -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gold/10 blob blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-mocha-400/10 blob blur-3xl" style="animation-delay: -3s;"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
+        <span class="inline-block text-gold font-semibold mb-4 tracking-widest text-sm">RECURSOS EXCLUSIVOS</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Tudo que você precisa para<br/>
+          <span class="text-gradient text-glow">ser aprovado</span>
+        </h2>
+        <p class="text-xl text-mocha-600">
+          Uma plataforma completa com tecnologia de ponta para maximizar seu aprendizado
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="card feature-card scroll-reveal delay-100 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">IA Personalizada</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            Nossa inteligência artificial aprende com você e sugere questões baseadas nas suas dificuldades.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="card feature-card scroll-reveal delay-200 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">Gamificação</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            XP, níveis, badges e rankings para transformar seus estudos em uma experiência engajante.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="card feature-card scroll-reveal delay-300 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">Estatísticas Detalhadas</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            Dashboard completo com métricas de desempenho por disciplina, banca e período.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="card feature-card scroll-reveal delay-400 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">Trilhas de Estudo</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            Conteúdo organizado em trilhas progressivas para você estudar de forma estruturada.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="card feature-card scroll-reveal delay-500 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">Comentários Especializados</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            Todas as questões com comentários detalhados de professores especializados em OAB.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="card feature-card scroll-reveal delay-600 group">
+          <div class="icon-wrapper w-16 h-16 bg-gradient-to-br from-mocha-500 via-mocha-400 to-gold rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <svg class="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3 group-hover:text-gradient transition-all">Simulados Cronometrados</h3>
+          <p class="text-mocha-600 leading-relaxed">
+            Treine em condições reais de prova com simulados que replicam o formato do exame.
+          </p>
+          <div class="mt-6 flex items-center gap-2 text-gold font-medium opacity-0 group-hover:opacity-100 transition-opacity">
+            <span>Saiba mais</span>
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it Works Section -->
+  <section id="how-it-works" class="py-32 bg-mocha-50/50 relative overflow-hidden">
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-20 scroll-reveal">
+        <span class="inline-block text-gold font-semibold mb-4 tracking-widest text-sm">COMO FUNCIONA</span>
+        <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Simples, rápido e<br/>
+          <span class="text-gradient text-glow">eficiente</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-12 max-w-5xl mx-auto relative">
+        <!-- Connection Line -->
+        <div class="hidden md:block absolute top-24 left-1/4 right-1/4 h-1 bg-gradient-to-r from-mocha-200 via-gold to-mocha-200 rounded-full"></div>
+
+        <!-- Step 1 -->
+        <div class="text-center scroll-reveal delay-100">
+          <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 mx-auto bg-white rounded-3xl shadow-elegant flex items-center justify-center border-glow">
+              <span class="text-4xl font-bold text-gradient">1</span>
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center shadow-lg">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3">Crie sua conta</h3>
+          <p class="text-mocha-600">Cadastre-se gratuitamente em menos de 1 minuto</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="text-center scroll-reveal delay-300">
+          <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 mx-auto bg-white rounded-3xl shadow-elegant flex items-center justify-center border-glow">
+              <span class="text-4xl font-bold text-gradient">2</span>
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-gold to-mocha-500 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3">Escolha sua trilha</h3>
+          <p class="text-mocha-600">Selecione as disciplinas que deseja estudar</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="text-center scroll-reveal delay-500">
+          <div class="relative inline-block mb-8">
+            <div class="w-24 h-24 mx-auto bg-white rounded-3xl shadow-elegant flex items-center justify-center border-glow">
+              <span class="text-4xl font-bold text-gradient">3</span>
+            </div>
+            <div class="absolute -bottom-2 -right-2 w-8 h-8 bg-gradient-to-br from-mocha-400 to-mocha-600 rounded-full flex items-center justify-center shadow-lg">
+              <svg class="w-4 h-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+          </div>
+          <h3 class="text-2xl font-bold text-mocha-800 mb-3">Comece a estudar</h3>
+          <p class="text-mocha-600">Resolva questões e acompanhe sua evolução</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section with 3D Effect -->
+  <section class="py-32 relative overflow-hidden">
+    <div class="container mx-auto px-6">
+      <div class="bg-gradient-cta rounded-[3rem] p-16 md:p-24 text-white relative overflow-hidden scroll-scale">
+        <!-- Animated background elements -->
+        <div class="absolute inset-0 opacity-20">
+          <div class="absolute top-0 left-0 w-[600px] h-[600px] bg-white rounded-full blur-[150px] -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
+          <div class="absolute bottom-0 right-0 w-[600px] h-[600px] bg-white rounded-full blur-[150px] translate-x-1/2 translate-y-1/2 animate-pulse" style="animation-delay: 1.5s;"></div>
+        </div>
+
+        <!-- Floating shapes -->
+        <div class="absolute top-20 right-20 w-20 h-20 border-2 border-white/20 rounded-2xl float rotate-12"></div>
+        <div class="absolute bottom-20 left-20 w-16 h-16 border-2 border-white/20 rounded-full float-slow" style="animation-delay: -2s;"></div>
+        <div class="absolute top-1/2 right-1/4 w-12 h-12 bg-white/10 rounded-xl float" style="animation-delay: -4s;"></div>
+
+        <div class="relative z-10">
+          <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Números que <span class="text-gold-light">impressionam</span></h2>
+            <p class="text-xl opacity-90">Resultados reais de alunos reais</p>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+            <div class="text-center group">
+              <div class="text-5xl md:text-7xl font-bold mb-3 group-hover:scale-110 transition-transform">
+                <span class="counter" data-target="89">0</span>%
+              </div>
+              <div class="text-lg opacity-80">Taxa de Aprovação</div>
+            </div>
+            <div class="text-center group">
+              <div class="text-5xl md:text-7xl font-bold mb-3 group-hover:scale-110 transition-transform">
+                <span class="counter" data-target="50">0</span>k+
+              </div>
+              <div class="text-lg opacity-80">Alunos Ativos</div>
+            </div>
+            <div class="text-center group">
+              <div class="text-5xl md:text-7xl font-bold mb-3 group-hover:scale-110 transition-transform">
+                <span class="counter" data-target="15">0</span>k+
+              </div>
+              <div class="text-lg opacity-80">Questões FGV</div>
+            </div>
+            <div class="text-center group">
+              <div class="text-5xl md:text-7xl font-bold mb-3 group-hover:scale-110 transition-transform">
+                <span class="counter" data-target="49">4.</span>
+              </div>
+              <div class="text-lg opacity-80">Avaliação Média</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="pricing" class="py-32 relative overflow-hidden">
+    <!-- Background blobs -->
+    <div class="absolute top-0 left-1/4 w-[600px] h-[600px] bg-gold/10 blob blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-mocha-400/10 blob blur-3xl" style="animation-delay: -4s;"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+      <div class="max-w-4xl mx-auto text-center scroll-reveal">
+        <span class="inline-block text-gold font-semibold mb-6 tracking-widest text-sm">COMECE AGORA</span>
+        <h2 class="text-4xl md:text-5xl lg:text-7xl font-bold mb-8">
+          Pronto para conquistar sua
+          <span class="text-gradient text-glow block mt-2">aprovação?</span>
+        </h2>
+        <p class="text-xl md:text-2xl text-mocha-600 mb-12 max-w-2xl mx-auto">
+          Junte-se a milhares de alunos que já estão no caminho certo para o sucesso na OAB.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center mb-10">
+          <a href="https://app.oaprova.com.br/cadastro" class="btn-primary btn-magnetic btn-ripple text-xl py-6 px-12 shadow-glow-intense border-glow">
+            <span class="flex items-center gap-3">
+              Começar Gratuitamente
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-6 text-mocha-500">
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Sem cartão de crédito
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Acesso imediato
+          </span>
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Cancele quando quiser
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-mocha-100 py-20 bg-white/50">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-12 mb-16">
+        <div class="md:col-span-1">
+          <a href="/" class="text-3xl font-bold text-gradient text-glow mb-6 block">OAprova</a>
+          <p class="text-mocha-600 leading-relaxed">
+            Sua plataforma inteligente para aprovação no Exame da OAB.
+          </p>
+          <div class="flex gap-4 mt-6">
+            <a href="#" class="w-10 h-10 bg-mocha-100 rounded-xl flex items-center justify-center text-mocha-500 hover:bg-mocha-200 hover:text-mocha-700 transition-all hover-lift">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-mocha-100 rounded-xl flex items-center justify-center text-mocha-500 hover:bg-mocha-200 hover:text-mocha-700 transition-all hover-lift">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" class="w-10 h-10 bg-mocha-100 rounded-xl flex items-center justify-center text-mocha-500 hover:bg-mocha-200 hover:text-mocha-700 transition-all hover-lift">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-mocha-800 mb-6 text-lg">Produto</h4>
+          <ul class="space-y-4 text-mocha-600">
+            <li><a href="#features" class="hover:text-mocha-800 transition-colors underline-animate">Recursos</a></li>
+            <li><a href="#pricing" class="hover:text-mocha-800 transition-colors underline-animate">Preços</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Depoimentos</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-mocha-800 mb-6 text-lg">Empresa</h4>
+          <ul class="space-y-4 text-mocha-600">
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Sobre</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Blog</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Carreiras</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Contato</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-mocha-800 mb-6 text-lg">Legal</h4>
+          <ul class="space-y-4 text-mocha-600">
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Privacidade</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Termos de Uso</a></li>
+            <li><a href="#" class="hover:text-mocha-800 transition-colors underline-animate">Cookies</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-mocha-100 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-sm text-mocha-500">© 2025 OAprova. Todos os direitos reservados.</p>
+        <p class="text-sm text-mocha-400">Feito com <span class="text-red-500">❤</span> para futuros advogados</p>
+      </div>
+    </div>
+  </footer>
+</Layout>
+
+<!-- JavaScript for Animations -->
+<script>
+  // Counter Animation
+  const animateCounters = () => {
+    const counters = document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      const target = parseInt(counter.getAttribute('data-target') || '0');
+      const duration = 2000;
+      const start = 0;
+      const startTime = performance.now();
+
+      const updateCounter = (currentTime: number) => {
+        const elapsed = currentTime - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+
+        // Easing function for smooth animation
+        const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+        const current = Math.floor(easeOutQuart * target);
+
+        counter.textContent = current.toString();
+
+        if (progress < 1) {
+          requestAnimationFrame(updateCounter);
+        } else {
+          counter.textContent = target.toString();
+        }
+      };
+
+      requestAnimationFrame(updateCounter);
+    });
+  };
+
+  // Scroll Reveal Animation
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+
+        // Trigger counter animation when stats section is visible
+        if (entry.target.querySelector('.counter')) {
+          animateCounters();
+        }
+      }
+    });
+  }, observerOptions);
+
+  // Observe all elements with scroll animation classes
+  document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-scale').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Navbar scroll effect
+  const navbar = document.getElementById('navbar');
+  let lastScroll = 0;
+
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+
+    if (currentScroll > 100) {
+      navbar?.classList.add('shadow-elegant');
+    } else {
+      navbar?.classList.remove('shadow-elegant');
+    }
+
+    lastScroll = currentScroll;
+  });
+
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const href = this.getAttribute('href');
+      if (href) {
+        document.querySelector(href)?.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+
+  // Magnetic button effect
+  document.querySelectorAll('.btn-magnetic').forEach(btn => {
+    btn.addEventListener('mousemove', (e) => {
+      const rect = (e.target as HTMLElement).getBoundingClientRect();
+      const x = e.clientX - rect.left - rect.width / 2;
+      const y = e.clientY - rect.top - rect.height / 2;
+
+      (e.target as HTMLElement).style.transform = `translate(${x * 0.1}px, ${y * 0.1}px)`;
+    });
+
+    btn.addEventListener('mouseleave', (e) => {
+      (e.target as HTMLElement).style.transform = '';
+    });
+  });
+
+  // Initial counter animation for hero section
+  setTimeout(() => {
+    animateCounters();
+  }, 500);
+</script>

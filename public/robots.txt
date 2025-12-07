@@ -1,0 +1,30 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://oaprova.com.br/sitemap-index.xml
+
+# Block common bot paths
+User-agent: *
+Disallow: /api/
+Disallow: /_astro/
+Disallow: /admin/
+
+# Google specific
+User-agent: Googlebot
+Allow: /
+
+# Bing specific
+User-agent: Bingbot
+Allow: /
+
+# Social media bots (allow for previews)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
